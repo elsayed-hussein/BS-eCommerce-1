@@ -1,0 +1,22 @@
+#brand-name {
+  position: relative;
+  padding: 60px 0px;
+  .mani-cat {
+    .swiper-slide {
+      width: 165px;
+      margin-right: 12px;
+      .icon {
+        display: inline-block;
+        width: 100%;
+        border-right: 1px solid #e6e6e6;
+        color: #cccccc;
+        text-align: center;
+        cursor: pointer;
+        &:hover {
+          transition: all 0.6s ease-in-out;
+          color: #00b207;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+@import "./utils";
+
+@import "../src/scss/bootstrap.scss";
+* {
+  font-family: "Poppins", sans-serif;
+}
+@import "./header";
+@import "./banner";
+@import "./Shipping";
+@import "./pCat";
+@import "./pPro";
+@import "./sale";
+@import "./deals";
+@import "./banner-sale";
+@import "./fPro";
+@import "./lNews";
+@import "./Testimonials";
+@import "./bName";
+@import "./Instagram";
+@import "./Newsletter";
+@import "./footer";

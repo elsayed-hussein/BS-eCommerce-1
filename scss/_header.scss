@@ -1,0 +1,159 @@
+
+.header {
+    .header__top {
+      background-color: $background-color;
+    }
+    .header__top-left {
+      p {
+        color: $sub-color;
+        font-size: $font-12;
+        line-height: $line-height-15;
+        margin: 0;
+      }
+    }
+    .header__top-right {
+      color: $sub-color;
+      font-size: $font-12;
+      line-height: $line-height-15;
+  
+      a {
+        color: $sub-color;
+        text-decoration: none;
+        &:focus i {
+          transform: translateY(5px);
+        }
+      }
+      .dropdown-menu li {
+        &:focus,
+        &:hover {
+          background-color: $main-color;
+          color: white;
+        }
+      }
+    }
+  }
+  .search {
+    &:hover,
+    &:focus-within {
+      border: $main-color 1px solid !important;
+      color: $main-color;
+    }
+    button {
+      background-color: $main-color;
+      &:hover {
+        background-color: #2e7c32;
+      }
+    }
+  }
+  .cart-bag {
+    position: relative;
+  }
+  .item-number {
+    background-color: #2e7c32;
+    font-size: 10px;
+    color: white;
+    width: 17px;
+    height: 17px;
+    border: 1px solid white;
+    border-radius: 50%;
+    position: absolute;
+    top: -3px;
+    left: 20px;
+    text-align: center;
+    transition: 500ms;
+  }
+  .cart-bag:hover svg {
+    color: #00b207;
+  }
+  .cart-bag:hover .item-number {
+    top: 0px;
+  }
+  
+  
+  .cursor-pointe {
+    cursor: pointer;
+  }
+  a {
+    text-decoration: none;
+  }
+  
+  .mopmenu {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 100;
+    height: 100%;
+    background-color: #00000080;
+  }
+  .cardmenu {
+    width: 300px;
+    min-height: 100%;
+  }
+  .sid {
+    min-height: 90vh;
+  }
+  .sidemopmenu span:hover {
+    color: #00b207;
+  }
+  .sidemopmenu span.active {
+    color: #00b207;
+  }
+  .mopmenu-cross {
+    position: absolute;
+    top: 25px;
+    left: 325px;
+  }
+  .accordion-button:focus {
+    box-shadow: none;
+    border-color: rgba(0, 0, 0, 0.125);
+    color: black;
+    background-color: white;
+  }
+  
+  .navMenu {
+    background-color: #333333;
+  }
+  .fs-12 {
+    font-size: 12px;
+  }
+  .fs-14 {
+    font-size: 14px;
+  }
+  
+  
+  .rotate-menu:hover .dropdown-menu {
+    display: block;
+    margin-top: 0px;
+  }
+  
+  .rotate-menu:hover .rotate {
+    transform-origin: center center;
+    animation-name: rotate;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+  }
+  .med-menu li:hover {
+    color: #00b207;
+  }
+  .med-menu li.active {
+    color: #00b207;
+    background-color: #e5f7e5;
+  }
+  .med-menu {
+    width: 250%;
+  }
+  
+  @keyframes rotate {
+    50% {
+      transform: rotate(90deg);
+    }
+    100% {
+      transform: rotate(180deg);
+    }
+  }
+  @media (max-width: 991px) {
+    .right_nav {
+      width: 100%;
+    }
+  }
+  

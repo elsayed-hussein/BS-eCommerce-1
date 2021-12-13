@@ -1,0 +1,75 @@
+#Instagram {
+  padding: 60px 0px;
+  .head {
+    margin-bottom: 32px;
+    h2 {
+      line-height: 38.4px;
+      font-size: 32px;
+      font-weight: 600;
+      position: relative;
+      color: #1a1a1a;
+      text-transform: capitalize;
+    }
+  }
+  .cards-ig {
+    .img {
+      margin-bottom: 24px;
+      width: 100%;
+      height: 200px;
+      border-radius: 10px;
+      overflow: hidden;
+      position: relative;
+      img {
+        width: inherit;
+        height: inherit;
+        object-fit: cover;
+        transition: all 0.3s linear;
+        border: 0;
+        outline: 0;
+      }
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        visibility: hidden;
+        background: #2b572ecc;
+        transition: all 0.3s linear;
+        span {
+          display: flex;
+          height: inherit;
+          align-items: center;
+          justify-content: center;
+          color: #fff;
+        }
+      }
+    }
+    &:hover {
+      .img {
+        img {
+          transform: scale(1.1);
+          transition: all 0.3s linear;
+        }
+        .overlay {
+          opacity: 1;
+          visibility: visible;
+          transition: all 0.6s ease-in-out;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  #Instagram {
+    padding: 40px 0px;
+    .head {
+      flex-direction: column;
+      h2 {
+        font-size: 28px;
+        line-height: 38px;
+      }
+    }
+  }
+}
